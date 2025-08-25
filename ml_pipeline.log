@@ -1,0 +1,8 @@
+2025-08-25 14:40:47,618 - src.models.model_trainer - ERROR - Erro no treinamento de LogisticRegression: could not convert string to float: 'Electronic check'
+2025-08-25 14:40:47,618 - src.models.model_trainer - ERROR - Falha no treinamento de LogisticRegression: could not convert string to float: 'Electronic check'
+2025-08-25 14:40:47,619 - src.models.model_trainer - ERROR - Erro no treinamento de RandomForest: could not convert string to float: 'Electronic check'
+2025-08-25 14:40:47,620 - src.models.model_trainer - ERROR - Falha no treinamento de RandomForest: could not convert string to float: 'Electronic check'
+2025-08-25 14:40:47,950 - src.models.model_trainer - ERROR - Erro no treinamento de GradientBoosting: could not convert string to float: 'Electronic check'
+2025-08-25 14:40:47,951 - src.models.model_trainer - ERROR - Falha no treinamento de GradientBoosting: could not convert string to float: 'Electronic check'
+2025-08-25 14:42:06,669 - src.data.feature_engineer - WARNING - Removendo coluna não numérica: PaymentMethod (tipo: object)
+2025-08-25 14:43:52,542 - src.data.feature_engineer - WARNING - Removendo coluna não numérica: PaymentMethod (tipo: object)

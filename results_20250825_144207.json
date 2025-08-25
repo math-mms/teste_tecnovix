@@ -1,0 +1,251 @@
+{
+  "cleaning_report": {
+    "initial_shape": [
+      1000,
+      21
+    ],
+    "final_shape": [
+      1000,
+      21
+    ],
+    "initial_missing": 0,
+    "final_missing": 0,
+    "rows_removed": 0,
+    "columns_removed": 0
+  },
+  "feature_info": {
+    "total_features": 27,
+    "categorical_features": 0,
+    "numeric_features": 3,
+    "derived_features": 8,
+    "feature_names": [
+      "SeniorCitizen",
+      "tenure",
+      "MonthlyCharges",
+      "TotalCharges",
+      "feature_total_services",
+      "feature_has_family",
+      "feature_is_senior",
+      "feature_long_contract",
+      "feature_multiple_lines",
+      "feature_monthly_per_tenure",
+      "feature_total_per_tenure",
+      "feature_charges_difference",
+      "gender_encoded",
+      "Partner_encoded",
+      "Dependents_encoded",
+      "PhoneService_encoded",
+      "MultipleLines_encoded",
+      "InternetService_encoded",
+      "OnlineSecurity_encoded",
+      "OnlineBackup_encoded",
+      "DeviceProtection_encoded",
+      "TechSupport_encoded",
+      "StreamingTV_encoded",
+      "StreamingMovies_encoded",
+      "Contract_encoded",
+      "PaperlessBilling_encoded",
+      "PaymentMethod_encoded"
+    ]
+  },
+  "training_info": {
+    "LogisticRegression": {
+      "training_time": 0.01011514663696289,
+      "training_samples": 800,
+      "features_count": 27,
+      "success": true
+    },
+    "RandomForest": {
+      "training_time": 0.1436605453491211,
+      "training_samples": 800,
+      "features_count": 27,
+      "success": true
+    },
+    "GradientBoosting": {
+      "training_time": 0.46765661239624023,
+      "training_samples": 800,
+      "features_count": 27,
+      "success": true
+    }
+  },
+  "evaluation_report": {
+    "evaluation_results": {
+      "LogisticRegression": {
+        "accuracy": 0.755,
+        "precision": 0.7405620855937312,
+        "recall": 0.755,
+        "f1_score": 0.7452338222605696,
+        "roc_auc": 0.8312155050699526,
+        "precision_per_class": [
+          0.810126582278481,
+          0.5476190476190477
+        ],
+        "recall_per_class": [
+          0.8707482993197279,
+          0.4339622641509434
+        ],
+        "f1_per_class": [
+          0.839344262295082,
+          0.4842105263157895
+        ],
+        "confusion_matrix": [
+          [
+            128,
+            19
+          ],
+          [
+            30,
+            23
+          ]
+        ]
+      },
+      "RandomForest": {
+        "accuracy": 0.745,
+        "precision": 0.724751461988304,
+        "recall": 0.745,
+        "f1_score": 0.730172836871866,
+        "roc_auc": 0.797458606083943,
+        "precision_per_class": [
+          0.7962962962962963,
+          0.5263157894736842
+        ],
+        "recall_per_class": [
+          0.8775510204081632,
+          0.37735849056603776
+        ],
+        "f1_per_class": [
+          0.8349514563106796,
+          0.43956043956043955
+        ],
+        "confusion_matrix": [
+          [
+            129,
+            18
+          ],
+          [
+            33,
+            20
+          ]
+        ]
+      },
+      "GradientBoosting": {
+        "accuracy": 0.745,
+        "precision": 0.724751461988304,
+        "recall": 0.745,
+        "f1_score": 0.730172836871866,
+        "roc_auc": 0.7896290591708381,
+        "precision_per_class": [
+          0.7962962962962963,
+          0.5263157894736842
+        ],
+        "recall_per_class": [
+          0.8775510204081632,
+          0.37735849056603776
+        ],
+        "f1_per_class": [
+          0.8349514563106796,
+          0.43956043956043955
+        ],
+        "confusion_matrix": [
+          [
+            129,
+            18
+          ],
+          [
+            33,
+            20
+          ]
+        ]
+      }
+    },
+    "best_model": "LogisticRegression",
+    "model_count": 3
+  },
+  "best_model": "LogisticRegression",
+  "best_model_metrics": {
+    "accuracy": 0.755,
+    "precision": 0.7405620855937312,
+    "recall": 0.755,
+    "f1_score": 0.7452338222605696,
+    "roc_auc": 0.8312155050699526,
+    "precision_per_class": [
+      0.810126582278481,
+      0.5476190476190477
+    ],
+    "recall_per_class": [
+      0.8707482993197279,
+      0.4339622641509434
+    ],
+    "f1_per_class": [
+      0.839344262295082,
+      0.4842105263157895
+    ],
+    "confusion_matrix": [
+      [
+        128,
+        19
+      ],
+      [
+        30,
+        23
+      ]
+    ]
+  },
+  "model_comparison": [
+    {
+      "Model": "LogisticRegression",
+      "Accuracy": 0.755,
+      "Precision": 0.7405620855937312,
+      "Recall": 0.755,
+      "F1-Score": 0.7452338222605696,
+      "AUC-ROC": 0.8312155050699526
+    },
+    {
+      "Model": "RandomForest",
+      "Accuracy": 0.745,
+      "Precision": 0.724751461988304,
+      "Recall": 0.745,
+      "F1-Score": 0.730172836871866,
+      "AUC-ROC": 0.797458606083943
+    },
+    {
+      "Model": "GradientBoosting",
+      "Accuracy": 0.745,
+      "Precision": 0.724751461988304,
+      "Recall": 0.745,
+      "F1-Score": 0.730172836871866,
+      "AUC-ROC": 0.7896290591708381
+    }
+  ],
+  "feature_importance": {
+    "SeniorCitizen": 0.09929735098440726,
+    "tenure": 0.6316533311987248,
+    "MonthlyCharges": 0.0913422313824831,
+    "TotalCharges": 0.0053752757978483365,
+    "feature_total_services": 1.3904379558404851,
+    "feature_has_family": 0.19824064471777836,
+    "feature_is_senior": 0.17783660147306835,
+    "feature_long_contract": 0.05394812652642732,
+    "feature_multiple_lines": 0.026761755828304843,
+    "feature_monthly_per_tenure": 0.28775707216035706,
+    "feature_total_per_tenure": 0.030204239814798334,
+    "feature_charges_difference": 0.00403054185697095,
+    "gender_encoded": 0.08394364652515789,
+    "Partner_encoded": 0.5206646231892581,
+    "Dependents_encoded": 0.19578851889309312,
+    "PhoneService_encoded": 0.6578523226926954,
+    "MultipleLines_encoded": 0.04882529838385819,
+    "InternetService_encoded": 0.687458137800941,
+    "OnlineSecurity_encoded": 0.9810440096148665,
+    "OnlineBackup_encoded": 0.8586798057019691,
+    "DeviceProtection_encoded": 0.9899708979671771,
+    "TechSupport_encoded": 1.0565314588674035,
+    "StreamingTV_encoded": 0.8177842148405318,
+    "StreamingMovies_encoded": 1.0824083476401845,
+    "Contract_encoded": 1.66496020668234,
+    "PaperlessBilling_encoded": 0.13522901255238493,
+    "PaymentMethod_encoded": 0.11108515273591166
+  },
+  "success": true,
+  "total_execution_time": 0.7292656898498535
+}
